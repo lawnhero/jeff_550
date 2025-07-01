@@ -41,7 +41,7 @@ if db:
 
 # Setup LLM and chain
 # llm = llms.openai_gpt4o_mini
-llm = llms.claude_sonnet_with_fallback
+llm = llms.claude_haiku_with_fallback
 rag_chain = chains.rag_chain(llm, retriever) if db else None
 
 def main():
@@ -51,7 +51,7 @@ def main():
     # Initialize chat history in session state
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = [
-            AIMessage("Hello! I'm your Virtual TA for ISOM 550. How can I help you today?")
+            AIMessage("Hello! I'm your Virtual TA for ISOM 550 by Prof. Rummel. How can I help you today?")
         ]
 
     # Display conversation statistics
