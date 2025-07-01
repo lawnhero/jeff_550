@@ -1,0 +1,10 @@
+streamlit
+langchain_community
+langchain
+langchain_openai 
+langchain_anthropic
+faiss-cpu
+pymongo
+python-docx
+PyPDF2
+unstructured
